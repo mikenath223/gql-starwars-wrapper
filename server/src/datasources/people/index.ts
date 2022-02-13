@@ -50,7 +50,7 @@ export class PeopleAPI extends RESTDataSource {
     this.baseURL = process.env.URL_BASE;
   }
 
-  peopleReducer(peopleData: APIDataType): PeopleData {
+  getPeopleData(peopleData: APIDataType): PeopleData {
     return {
       count: peopleData.count,
       next: peopleData.next,
@@ -69,10 +69,20 @@ export class PeopleAPI extends RESTDataSource {
     };
   }
 
+  getPersonData(personDetails: APIPersonDataType) {
+    return {
+      ...personDetails,
+      starships: personDetails.starships.length,
+      species: personDetails.species.length,
+      vehicles: personDetails.vehicles.length,
+      films: personDetails.films.length,
+    };
+  }
+
   async getAllPeople(page: number = 1, search: string = '') {
     const response = await this.get('people', { page, search });
 
-    return this.peopleReducer(response);
+    return this.getPeopleData(response);
   }
 
   async getPersonByName(name: string) {
@@ -80,6 +90,6 @@ export class PeopleAPI extends RESTDataSource {
 
     if (response.results.length == 0) return;
 
-    return this.getPerson(response.results[0]);
+    return this.getPersonData(response.results[0]);
   }
 }
