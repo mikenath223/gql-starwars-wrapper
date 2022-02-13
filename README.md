@@ -1,12 +1,11 @@
-## Gql Star wars
+## Gql Star wars wrapper
 
 ## Description
 
 An apollo-graphql server, it wraps the [Star Wars API](https://swapi.dev/).
 
-Live Demo [Netlify]().
-Server Hosted on [Heroku]().
-The UI repo on [Github](https://github.com/mikenath223/gql-starwars-wrapper)
+Live Demo [Codesandbox](https://1fuih.csb.app/).
+Server Hosted on [Codesandbox](https://sq3g8.sse.codesandbox.io/).
 <br />
 
 ## Technology Stack

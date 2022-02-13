@@ -29,23 +29,4 @@ describe('PersonCard', () => {
       />
     );
   });
-
-  it('should be able to click on homeworld link', () => {
-    const onClick = jest.fn();
-    render(
-      <MemoryRouter>
-        <PersonCard
-          name="Luke Skywalker"
-          height="172"
-          mass="77"
-          homeworld="http://swapi.dev/api/planets/1/"
-          gender="Female"
-          onClick={onClick}
-        />
-      </MemoryRouter>
-    );
-
-    fireEvent.click(screen.getByTestId('person-card-homeworld'));
-    expect(mockHistoryPush).toHaveBeenCalledWith('planet/1');
-  });
 });

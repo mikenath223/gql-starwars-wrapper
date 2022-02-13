@@ -1,8 +1,5 @@
-import React from 'react';
 import { InMemoryCache } from '@apollo/client';
-
 import { renderApollo, cleanup, screen, fireEvent, waitFor } from '../../test-utils';
-
 import { GET_PEOPLE_DATA, People } from '../People';
 
 const mockPerson = {
@@ -59,7 +56,7 @@ describe('People page', () => {
       });
 
       await waitFor(() => {
-        fireEvent.change(screen.getByPlaceholderText('Search…'), {
+        fireEvent.change(screen.getByPlaceholderText('Type name to search…'), {
           target: { value: 'luke' },
         });
 
@@ -97,9 +94,7 @@ describe('People page', () => {
       });
 
       await waitFor(() => {
-        expect(
-          screen.getByText('Something seems to be wrong with the system.')
-        ).toBeInTheDocument();
+        expect(screen.getByText('Error encountered in setting up processes.')).toBeInTheDocument();
       });
     });
 

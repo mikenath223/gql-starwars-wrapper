@@ -1,9 +1,6 @@
-import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { InMemoryCache } from '@apollo/client';
-
 import { renderApollo, cleanup, screen, fireEvent, waitFor } from '../../test-utils';
-
 import { GET_PERSON_DETAILS_BY_NAME, PersonDetails } from '../PersonDetails';
 
 const mockHistoryPush = jest.fn();
@@ -54,19 +51,6 @@ describe('PersonDetails', () => {
         </MemoryRouter>,
         { mocks, cache }
       );
-    });
-
-    it('should be able to click on home world link', async () => {
-      renderApollo(
-        <MemoryRouter>
-          <PersonDetails />
-        </MemoryRouter>,
-        { mocks, cache }
-      );
-
-      await waitFor(() => {
-        fireEvent.click(screen.getByText('Home world'));
-      });
     });
 
     it('should display avatar with letter A when name is null', async () => {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { PageNotFound } from '../PageNotFound';
 import { render, cleanup } from '../../test-utils';
 
