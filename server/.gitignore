@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+
+# Delepment environment
+.env
+
+# Testing
+coverage/
+__snapshots__
