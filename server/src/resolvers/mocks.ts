@@ -16,13 +16,3 @@ export const mockPeopleDataResolverResponse = {
 };
 
 export const mockPersonResolverResponse = mockPeopleDataResolverResponse.people[0];
-
-export const mockPlanetRosolverResponse = {
-  name: 'Tatooine',
-  rotationPeriod: '23',
-  orbitalPeriod: '304',
-  diameter: '10465',
-  climate: 'arid',
-  gravity: '1 standard',
-  terrain: 'desert',
-};
