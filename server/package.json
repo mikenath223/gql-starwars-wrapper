@@ -1,0 +1,47 @@
+{
+  "name": "star-wars-server",
+  "version": "1.0.0",
+  "description": "Star war server",
+  "main": "index.js",
+  "repository": "https://github.com/mikenath223/gql-starwars-wrapper",
+  "author": "Michgolden Ukeje",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "start": "node ./build/index.js",
+    "build": "tsc",
+    "tslint": "tslint --project tsconfig.json",
+    "prettier:base": "prettier --parser typescript --single-quote",
+    "prettier:write": "yarn prettier:base -- --write \"src/**/*.{ts,tsx}\"",
+    "test": "jest"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^0.13.0",
+    "apollo-server-express": "^2.24.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.23",
+    "apollo-link": "^1.2.14",
+    "apollo-server-testing": "^2.24.0",
+    "babel-jest": "^26.6.3",
+    "graphql-tag": "^2.12.4",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0",
+    "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "tslint-react": "^5.0.0",
+    "typescript": "^4.2.4"
+  }
+}
