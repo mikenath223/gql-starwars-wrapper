@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { PageLayout } from '../PageLayout';
 import { render, cleanup } from '../../test-utils';
 

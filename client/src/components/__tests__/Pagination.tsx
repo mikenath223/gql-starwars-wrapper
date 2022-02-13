@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Pagination } from '../Pagination';
 import { render, cleanup, screen, fireEvent } from '../../test-utils';
 

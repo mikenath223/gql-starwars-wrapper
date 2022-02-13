@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Input } from '../Input';
 import { render, cleanup, screen, fireEvent } from '../../test-utils';
 

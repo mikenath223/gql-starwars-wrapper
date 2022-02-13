@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { DetailsRow } from '../DetailsRow';
 import { render, cleanup } from '../../test-utils';
 

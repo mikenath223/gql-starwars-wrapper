@@ -1,8 +1,5 @@
-import React from 'react';
-import { MemoryRouter } from 'react-router-dom';
-
 import { PersonCard } from '../PersonCard';
-import { render, cleanup, fireEvent, screen } from '../../test-utils';
+import { render, cleanup } from '../../test-utils';
 
 const mockHistoryPush = jest.fn();
 
