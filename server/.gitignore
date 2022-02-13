@@ -1,7 +1,7 @@
 # Dependency directories
 node_modules/
 
-# Delepment environment
+# Development environment
 .env
 
 # Testing
