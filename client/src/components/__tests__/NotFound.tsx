@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { NotFound } from '../NotFound';
 import { render, cleanup } from '../../test-utils';
 

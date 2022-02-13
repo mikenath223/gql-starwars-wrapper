@@ -12,7 +12,8 @@ export const Header = styled.div`
   position: sticky;
   top: 0;
   z-index: sticky;
-  background: #f9fafb; ;
+  background: aliceblue;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 `;
 
 export const InnerHeaderWrapper = styled.div`
@@ -38,6 +39,7 @@ export const InnerHeaderWrapper = styled.div`
   @media screen and (max-width: 480px) {
     padding: 0 4%;
     margin: 0 1%;
+    flex-direction: column;
   }
 `;
 

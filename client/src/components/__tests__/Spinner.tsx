@@ -1,6 +1,3 @@
-import { getByTestId } from '@testing-library/dom';
-import React from 'react';
-
 import { render, cleanup, screen } from '../../test-utils';
 
 import { Spinner } from '../Spinner';

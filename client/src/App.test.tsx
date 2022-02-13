@@ -1,6 +1,4 @@
-import React from 'react';
 import { InMemoryCache } from '@apollo/client';
-
 import { renderApollo } from './test-utils';
 import { GET_PEOPLE_DATA } from './pages/People';
 import App from './App';
